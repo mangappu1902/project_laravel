@@ -31,6 +31,9 @@ Route::prefix('admin')->group(function () {
 
     Route::get('/jsIntroduction', 'JsintroController@index')->name('jsintro');
     Route::get('/jsIntroduction_next', 'JsintroController@index_next')->name('jsintro_next');
+
+    Route::get('/jsMangapu', 'MangapuController@index')->name('jsMangapu');
+    Route::get('/jsMangapu_next', 'MangapuController@index_next')->name('jsMangapu_next');
   
 
 });
